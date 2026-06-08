@@ -1,0 +1,151 @@
+:root {
+  --color-primary: #68f2ff;
+  --color-bg: #1d252c;
+  --color-danger: #f11752;
+  --border-radius-main: 15px;
+}
+
+/* Центрирование приложения на темном фоне */
+.App {
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  font-family: sans-serif;
+}
+
+/* Главная внешняя рамка счетчика */
+.counter-container {
+  border: 3px solid var(--color-primary);
+  border-radius: var(--border-radius-main);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 500px;
+}
+
+/* Верхнее цифровое табло (обычное состояние) */
+.display-board {
+  border: 3px solid var(--color-primary);
+  color: var(--color-primary);
+  font-size: 90px;
+  font-weight: bold;
+  height: 180px;
+  border-radius: var(--border-radius-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-board.display-red {
+  color: var(--color-danger);
+}
+
+.buttons-container {
+  border: 3px solid var(--color-primary);
+  border-radius: var(--border-radius-main);
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Базовый стиль для активных кнопок */
+.button-styled {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border: none;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: var(--border-radius-main);
+  cursor: pointer;
+  min-width: 100px;
+  transition: all 0.2s ease;
+}
+
+/* Эффект при наведении на активную кнопку */
+.button-styled:not(:disabled):hover {
+  opacity: 0.85;
+}
+
+/* Стиль для заблокированной кнопки (disabled) */
+.button-styled:disabled {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.button-styled:not(:disabled):active {
+  color: var(--color-primary);
+  background-color: var(--color-bg);
+}
+
+.values-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 25px;
+}
+
+.input-number {
+  color: var(--color-bg);
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid var(--color-primary);
+  border-radius: 5px;
+  width: 170px;
+  text-align: center;
+}
+
+.input-number:focus {
+  outline: none;
+}
+
+.input-error {
+  border: 2px solid red;
+  background-color: #ffcccc;
+  outline: none;
+}
+
+.value-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.error-text {
+  color: var(--color-danger);
+  font-size: 30px;
+}
+
+.info-text {
+  color: var(--color-primary);
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

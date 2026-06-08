@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Убираем внешние и внутренние отступы у самых частых тегов */
+body,
+h1, h2, h3, h4, p,
+ul, ol,
+figure,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Убираем маркеры у списков (если нужно, возвращаем через класс) */
+ul, ol {
+  list-style: none;
+}
+
+/* 4. Настраиваем базовые свойства для body */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased; /* Сглаживание шрифтов */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 5. Упрощаем работу с медиа-элементами */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 6. Наследуем шрифты для элементов форм, чтобы они не выглядели чужеродно */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Убираем стандартный декор со ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
